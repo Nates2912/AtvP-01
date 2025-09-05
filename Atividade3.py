@@ -4,16 +4,16 @@ os.system("cls")
 
 #Big test 3!!!
 
-A = int(input("Type the first number: "))
-B = int(input("Type the second number: "))
+A = int(input("Number A: "))
+B = int(input("Number B: "))
 
 C = A = B
 
 if A == B:
-    print(f"The result is {A + B}")
+    print(f"Number C is: {A + B}")
 
 else:
-    print(f"The result is {A * B}")
+    print(f"Number C is: {A * B}")
 
 
 
