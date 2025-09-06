@@ -7,27 +7,24 @@ product  = input("Product:")
 quant  = int(input("Cart: "))
 price  = float(input("Price: "))
 
-quant = price * quant
+total = price * quant
 
 #process
 
 if quant <= 5 : 
     print(f"You bought {quant} {product}.")
-    disc = price * 0.02
-    total = quant  - disc
+    disc = total * 0.02
+   
 elif quant > 5 and quant <= 10:
     print(f"You bought {quant} {product}.")
-    disc = price * 0.03
-    total = quant  - disc
-elif quant > 10:
-    print(f"You bought {quant} {product}.")
-    disc = price * 0.05
-    total = quant  - disc
-else:print(f"You bought {quant} {product}.")
+    disc = total * 0.03
     
+else:
+    print(f"You bought {quant} {product}.")
+    disc = total * 0.05
 
-#exit
+totalfin = total - disc
 
 print ("")
 
-print(f"\n Your total is: {total:.2f}")
+print(f"\n Your total is: {totalfin:.2f}")
